@@ -122,10 +122,9 @@ for i = 1:size(ft_form.trial,2)/2;
     matrix_coh_FDR = matrix_coh_FDR + matrix_coh;
     clear null_dis_coh;
     
-    
     n_mat = n_mat +1;
 end;
 
 coh_mat_beta = matrix_coh_FDR./n_mat;
-f_name = sprintf('pertest_coh_%02d.mat',num);
+f_name = sprintf('coh_%02d.mat',num);
 save(['~\coh' f_name],'coh_mat_beta');
