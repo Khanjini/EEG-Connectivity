@@ -1,3 +1,14 @@
+chans = {'F3';'FC3';'C5';'C3';'CP3';'P3';'O1';'Cz';'F4';'FC4';'C4';'C6';'CP4';'P4';'O2'};
+selected_chan = [5,10,14,13,18,21,27,48,40,45,50,51,55,58,64];
+
+chan = size(selected_chan,2);
+nsamps = 250;
+m = 512*2;
+n = size(selected_chan,2);
+block_size = 16;
+nblocks = m/block_size;
+alpha = 0.05;
+
 num = num_sub;
 raw_data = sprintf('data_sub_%02d.mat',num); 
 load(raw_data);
