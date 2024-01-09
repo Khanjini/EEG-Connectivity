@@ -1,5 +1,5 @@
 num = num_sub;
-raw_data = sprintf('ft_left_%02d.mat',num);
+raw_data = sprintf('data_sub_%02d.mat',num); 
 load(raw_data);
 matrix_coh_FDR = zeros(15,15);
 n_mat = 0;
