@@ -45,7 +45,7 @@ for i = 1:size(ft_form.trial,2)/2;
     fc_raw = prepro_data_rest.trial{1, 1};
     
     
-    Permutation test
+    % Permutation test
     for j = 1:n; % permutation for each channel
         
         FP_coh = nan(nsamps,n,n);
@@ -94,7 +94,7 @@ for i = 1:size(ft_form.trial,2)/2;
         end;
         null_dis_coh{1,j} = FP_coh; % making a null-distribution of the connectivity values
     end;
-    
+
     
     matrix_coh = zeros(15,15);
     mhtc = 'FDR';
