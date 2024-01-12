@@ -1,5 +1,4 @@
 selected_chan = [5,10,14,13,18,21,27,48,40,45,50,51,55,58,64];
-addpath('C:\Users\admin\Documents\MATLAB\raw_data');
 
 regmode   = 'OLS';  % VAR model estimation regression mode ('OLS', 'LWR' or empty for default)
 icregmode = 'OLS';  % information criteria regression mode ('OLS', 'LWR' or empty for default)
